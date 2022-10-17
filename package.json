@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/uji/zenn-contents#readme",
   "dependencies": {
-    "zenn-cli": "^0.1.63"
+    "zenn-cli": "^0.1.131"
   }
 }

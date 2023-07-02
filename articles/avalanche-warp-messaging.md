@@ -1,5 +1,5 @@
 ---
-title: "AvalancheのSubnet間の通信プロトコル Avalanche Warp Messagingの仕組み"
+title: "AvalancheのSubnet間の通信プロトコル Avalanche Warp Messaging(AWM) の仕組み"
 emoji: "📮"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Avalanche", "ブロックチェーン"]
@@ -8,13 +8,13 @@ published_at: 2023-07-03 20:00
 publication_name: "moneyforward"
 ---
 
-社内の勉強会で、Avalanche Warp Messagingの仕組みについて扱ったので、そこでの学びをこちらにDumpします。
+社内の勉強会で、AWMの仕組みについて扱ったので、そこでの学びをこちらにDumpします。
 記事の内容に不備等あれば是非フィードバックいただきたいです。
 
 ## Avalancheざっくり説明
 
 - Avalancheは、高性能、高い拡張性、カスタマイズ性を併せ持つセキュアなプラットフォーム
-  - プラットフォーム上で、複数のブロックチェーンを高い相互運用性(インターオペラビリティ)を持って動作させることで、これを実現しようとしている
+- 複数のブロックチェーンを、お互いが任意のデータを送受信できる高い相互運用性(インターオペラビリティ)を持った状態で動作させることで、これを実現しようとしている
 - Avalancheは送金や取引の実施とプラットフォームの運営が別のチェーンに分別されている
   - プライマリネットワークは3つのチェーンによって構成されている
   - 本記事の文脈で重要となるのはP-Chain。P-Chainはプラットフォームの運営に特化したチェーン
@@ -23,12 +23,13 @@ publication_name: "moneyforward"
 *[公式ドキュメント](https://docs.avax.network/learn/avalanche/avalanche-platform)より引用*
 ## AvalancheのSubnetとは
 
+SubnetはAvalancheのプラットフォーム上に簡単かつ柔軟にブロックチェーンを構築するための仕組み
+
 ![](https://storage.googleapis.com/zenn-user-upload/d6196979fddc-20230630.png =500x)
 *Subnetとブロックチェーンの関係*
 
 - SubnetはAvalancheバリデーターのグループであり、ブロックチェーンではない
-- Subnetがブロックチェーンをホストする関係にある
-  - Subnetはそのコンセンサスレイヤーの役割を担う
+- Subnetがブロックチェーンをホストし、コンセンサスレイヤーの役割を担う
 - 1つのSubnetで複数のブロックチェーンをホストすることも可能
 ![](https://storage.googleapis.com/zenn-user-upload/0f1ea66d0b87-20230630.png =500x)
 *P-ChainとSubnetとバリデーターの関係*
@@ -36,10 +37,10 @@ publication_name: "moneyforward"
 - Subnetやバリデーターは、プライマリネットワークのP-Chainと呼ばれる、プラットフォームの運営に特化したチェーンによって管理されている
 - Subnet内のすべてのバリデーターは、Avalancheのプライマリネットワークのバリデーターにもなる必要がある
   - 2000 AVAXをステーキングすることでバリデーターになることが可能
-- Subnetを作成することで、Avalancheのバリデーター資源を活用しつつ、自由にルールを設定したブロックチェーンを構築することができるようになる
-  - バリデーター要件、実行ロジック、ガス代体系、VM、インセンティブ設計まで独自にカスタムすることができる
 - 各Subnetは他のSubnetから分離されているため、あるSubnetでの使用量が増加しても、別のSubnetのパフォーマンスに影響を与えることはない
 
+Subnetを作成することで、Avalancheのバリデーター資源を活用しつつ、自由にルールを設定したブロックチェーンを構築することができるようになる
+- バリデーター要件、実行ロジック、ガス代体系、VM、インセンティブ設計まで独自にカスタムすることができる
 ## Avalanche Warp Messaging（AWM）とは
 
 - AWMは、Subnet同士を相互運用するための通信規格
@@ -85,6 +86,7 @@ https://twitter.com/AvaxDevelopers/status/1668357327328796672
 - P-Chainを利用した検証により、ブリッジやオラクル、その他第三者が提供するサービスに依存することなく通信できる
 - 類似プロトコルとしてよく比較されるPolkadot XCMは、より厳格なフォーマットを提供している
   -  Avalancheは柔軟性を重視する設計思想から、シンプルな規約のみを提供する意思決定をしていると考えられる
+- Cosmosもプラットフォームネイティブな通信規格としてCosmos IBCを提供しているが、Cosmos IBCには、データを送受信するブロックチェーン以外への依存を限りなくなくそうとする設計思想があり、相互運用性を実現する仕組みも大きく異なる
 
 ## まとめ
 

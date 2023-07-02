@@ -1,5 +1,5 @@
 ---
-title: "AvalancheのSubnetと、Subnet間の相互運用を実現する通信プロトコル Avalanche Warp Messagingの仕組み"
+title: "AvalancheのSubnetと、Subnet間の通信プロトコル Avalanche Warp Messagingの仕組み"
 emoji: "📮"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Avalanche", "ブロックチェーン"]

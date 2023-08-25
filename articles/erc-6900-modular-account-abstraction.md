@@ -125,7 +125,7 @@ https://eips.ethereum.org/EIPS/eip-2535
 
 これらの規格を満たしたスマートコントラクトアカウントは、動的にプラグインを切り替えられるコントラクトとなり、新しいアカウント機能を提供する際、開発者は既存プラグインの選定や新規プラグイン開発などより本質的な部分に集中できるようになります。
 
-![](https://storage.googleapis.com/zenn-user-upload/2333616fd938-20230825.png)
+![](https://storage.googleapis.com/zenn-user-upload/27ed8d85946d-20230825.png)
 
 ## まとめ
 

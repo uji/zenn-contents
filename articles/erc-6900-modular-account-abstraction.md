@@ -53,7 +53,7 @@ ERC-4337 が達成する目標の1つとして、各 SCA(スマートコント�
 この問題を解決する方法として挙げられるのが、プラグイン/モジュール機構の実現です。
 実際に、いくつかのスマートコントラクトのSDKやフレームワークを提供するプラットフォームでは再利用可能なプラグイン/モジュール機構が構築されています。
 
-- Gnosis が開発する Safe{Core} Protocol の Safe Plugins
+- Safe{Core} Protocol の Safe Plugins
 
 https://docs.safe.global/safe-core-protocol/plugins
 

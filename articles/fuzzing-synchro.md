@@ -1,5 +1,5 @@
 ---
-title: "Code-Hex/Synchroにファジングテストを実装して得た学び"
+title: "GoのOSS(Code-Hex/Synchro)にファジングテストを実装して得た学び"
 emoji: "🔧"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["go", "test", "fuzzing"]

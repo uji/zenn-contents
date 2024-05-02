@@ -3,7 +3,7 @@ title: "GoのOSS(Code-Hex/Synchro)にファジングテストを実装して得�
 emoji: "🔧"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["go", "test", "fuzzing"]
-published: false
+published: true
 publication_name: "notahotel"
 ---
 

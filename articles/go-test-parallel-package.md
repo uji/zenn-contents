@@ -3,7 +3,7 @@ title: "Goの別パッケージのテストはデフォルトではt.Parallel()�
 emoji: "🐕"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["go", "test"]
-published: false
+published: true
 publication_name: "notahotel"
 ---
 

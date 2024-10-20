@@ -1,13 +1,13 @@
 ---
-title: "Go 1.24 から go.mod でのツール管理がより簡潔になりそう"
+title: "Go 1.24 から go.mod でのツール管理がより簡潔になるかもしれない"
 emoji: "📚"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["go"]
-published: false
+published: true
 ---
 
 こんにちは、ujiです。
-Goでプログラムを書く際、Goで書かれたツールを使用する機会が少なからずあると思いますが、 皆さんはGoの開発で利用するコマンドラインツールのバージョンはどのように管理していますか？
+Goでプログラムを書く際、Goで書かれたコマンドラインツールを使用する機会が少なからずあると思いますが、 皆さんはGoの開発で利用するコマンドラインツールのバージョンはどのように管理していますか？
 
 Go公式WikiのModuleのページでは、`tools.go` ファイルを用意して、blank importで利用するツール群の依存関係をgo.modの管理対象にする方法が紹介されています。
 https://go.dev/wiki/Modules#how-can-i-track-tool-dependencies-for-a-module
@@ -65,6 +65,8 @@ go run github.com/99designs/gqlgen init
 ツールの追加や更新、削除もGoのツールチェインに含め、ツール管理の体験を向上させるのが、この提案の目的になります。
 
 ## 提案の概要
+
+issueでは、go.mod にツール用のdirectiveを追加し、Goコマンドからそれを編集できるようにする仕組みが提案されています。
 
 ### go.mod の `tool` directiveの追加
 
@@ -128,8 +130,9 @@ https://github.com/golang/go/issues/48429#issuecomment-1699638321
 
 が、今回紹介した内容はあくまでも 2024-10-19 時点のもので、今後変更になる可能性があります。
 スケジュールについてもまだ不透明な状況です。
-（Design docには1.24で取り組むと記載がありますが、Go 1.24のマイルストーンには入っていませｎ）
+（Design docには1.24で取り組むと記載がありますが、Go 1.24のマイルストーンやリリースノートのドラフトには入っていません）
 https://github.com/golang/go/milestone/322
+https://tip.golang.org/doc/go1.24
 
 最新の情報をチェックしたい方はissueでの議論をウォッチして置けると良さそうです。
 

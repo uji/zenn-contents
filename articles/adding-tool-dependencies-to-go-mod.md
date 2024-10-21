@@ -121,6 +121,16 @@ https://go.googlesource.com/proposal/+/54d6775ff71ccbc00c276db2a4e4841d67011cf4/
 
 https://go-review.googlesource.com/c/go/+/613095
 
+### 追記(2024-10-21)
+
+gotip と呼ばれる開発ブランチの機能が使えるコマンドに既に取り込まれており、手元で試すことが可能です。
+（[tenntennさん](https://twitter.com/tenntenn)に教えていただきました🙏）
+
+もし触って理解を深めたい方は是非試してみてください！
+gotipについての記事も書いてますのでよければ参考にしてください。
+
+https://zenn.dev/uji/articles/d51e81535e0d723af56e
+
 ## 最後に
 
 Proposalは去年の8月時点で既にAcceptedになっています。

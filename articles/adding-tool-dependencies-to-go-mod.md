@@ -106,7 +106,8 @@ require golang.org/x/tools v0.9.0
 
 上記のように記述がある場合、`go tool stringer` を実行すると、`go run golang.org/x/tools/cmd/stringer@v0.9.0` と同様に動作します。
 
-go run とは違い、go tool はビルドされたバイナリを `$GOCACHE/tool/<current-module-path>/<TOOLNAME>` にキャッシュします。
+go run とは違い、go tool はビルドされたバイナリを ~~`$GOCACHE/tool/<current-module-path>/<TOOLNAME>` に~~
+従来のものと同様に `$GOCACHE` 配下にキャッシュします。(2025-01-03 修正。[𝗖‌𝗜‌𝗔‌𝗥‌𝗔‌𝗡‌𝗔さん](https://zenn.dev/koya_iwamura)ありがとうございます🙏)
 
 ---
 

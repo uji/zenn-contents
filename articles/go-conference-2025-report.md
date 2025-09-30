@@ -3,7 +3,7 @@ title: "Go Conference 2025 参加レポート"
 emoji: "👍"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["Go"]
-published: false
+published: true
 publication_name: "notahotel"
 ---
 

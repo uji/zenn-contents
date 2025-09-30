@@ -49,9 +49,11 @@ https://speakerdeck.com/uji/green-tea-gcnodong-zuo-wozhi-zhi-ju-nisitemiru
 スタッフとしてDay1 Room2のワークショップ部屋に張り付いていました。
 どのワークショップも、ホスト-参加者、参加者同士の交流が活発で、初めて会った方同士でもGoについて楽しくお話できるきっかけになったのではと思います。
 
-ホストのお一人、satokenさんがレポートを書かれているのでそちら見ていただけると雰囲気などわかりやすいです。
+ホストの方でレポートを書かれている方がいらっしゃるのでそちら見ていただけると雰囲気などわかりやすいです。
 
 https://zenn.dev/satoken/articles/gocon2025-workshop
+
+https://zenn.dev/senoue/articles/9d744233ea06ba
 
 Go Conference OST(Open Space Technologyと呼ばれる、テーマを参加者自身が自由に決めてグループで話すスタッフ運営企画)では、一部自分も参加者としてトークに参加しました。
 自分が入ったのはGoのメモリ管理について語るグループで、メモリ管理有識者が集まっていて面白かったです（ついていけなかった…！）

@@ -115,5 +115,7 @@ https://x.com/uji_rb/status/1962895565433479386
 
 https://conf.tinygo-keeb.org/2025/
 
-10/24 (金) に NOT A HOTEL ASAKUSA にて Asakusa.go #6 が開催されます！
+また、10/24 (金) には NOT A HOTEL ASAKUSA にて Asakusa.go #6 が開催されます！
 こちらにも遊びに来てください！
+
+https://asakusago.connpass.com/event/369325/
